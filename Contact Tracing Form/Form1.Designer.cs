@@ -44,13 +44,23 @@
             this.Citylbl = new System.Windows.Forms.Label();
             this.Addresslbl = new System.Windows.Forms.Label();
             this.FAddlbl = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Submitbtn = new System.Windows.Forms.Button();
+            this.FormTitle = new System.Windows.Forms.Label();
+            this.Inst_lbl = new System.Windows.Forms.Label();
+            this.DesPBbot = new System.Windows.Forms.PictureBox();
+            this.DesPBl = new System.Windows.Forms.PictureBox();
+            this.DesPBr = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.DesPBbot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DesPBl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DesPBr)).BeginInit();
             this.SuspendLayout();
             // 
             // Namelbl
             // 
             this.Namelbl.AutoSize = true;
             this.Namelbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Namelbl.Location = new System.Drawing.Point(12, 81);
+            this.Namelbl.Location = new System.Drawing.Point(13, 136);
             this.Namelbl.Name = "Namelbl";
             this.Namelbl.Size = new System.Drawing.Size(57, 20);
             this.Namelbl.TabIndex = 0;
@@ -59,7 +69,7 @@
             // SNlbl
             // 
             this.SNlbl.AutoSize = true;
-            this.SNlbl.Location = new System.Drawing.Point(34, 111);
+            this.SNlbl.Location = new System.Drawing.Point(17, 165);
             this.SNlbl.Name = "SNlbl";
             this.SNlbl.Size = new System.Drawing.Size(70, 20);
             this.SNlbl.TabIndex = 1;
@@ -69,7 +79,7 @@
             // FNlbl
             // 
             this.FNlbl.AutoSize = true;
-            this.FNlbl.Location = new System.Drawing.Point(213, 111);
+            this.FNlbl.Location = new System.Drawing.Point(196, 165);
             this.FNlbl.Name = "FNlbl";
             this.FNlbl.Size = new System.Drawing.Size(83, 20);
             this.FNlbl.TabIndex = 2;
@@ -78,7 +88,7 @@
             // MNlbl
             // 
             this.MNlbl.AutoSize = true;
-            this.MNlbl.Location = new System.Drawing.Point(506, 111);
+            this.MNlbl.Location = new System.Drawing.Point(489, 165);
             this.MNlbl.Name = "MNlbl";
             this.MNlbl.Size = new System.Drawing.Size(103, 20);
             this.MNlbl.TabIndex = 3;
@@ -86,21 +96,21 @@
             // 
             // SNtxtbx
             // 
-            this.SNtxtbx.Location = new System.Drawing.Point(34, 134);
+            this.SNtxtbx.Location = new System.Drawing.Point(17, 188);
             this.SNtxtbx.Name = "SNtxtbx";
             this.SNtxtbx.Size = new System.Drawing.Size(153, 27);
             this.SNtxtbx.TabIndex = 4;
             // 
             // FNtxtbx
             // 
-            this.FNtxtbx.Location = new System.Drawing.Point(213, 134);
+            this.FNtxtbx.Location = new System.Drawing.Point(196, 188);
             this.FNtxtbx.Name = "FNtxtbx";
             this.FNtxtbx.Size = new System.Drawing.Size(253, 27);
             this.FNtxtbx.TabIndex = 5;
             // 
             // MNtxtbx
             // 
-            this.MNtxtbx.Location = new System.Drawing.Point(506, 134);
+            this.MNtxtbx.Location = new System.Drawing.Point(489, 188);
             this.MNtxtbx.Name = "MNtxtbx";
             this.MNtxtbx.Size = new System.Drawing.Size(204, 27);
             this.MNtxtbx.TabIndex = 6;
@@ -108,7 +118,7 @@
             // 
             // Emailtxtbx
             // 
-            this.Emailtxtbx.Location = new System.Drawing.Point(34, 205);
+            this.Emailtxtbx.Location = new System.Drawing.Point(17, 259);
             this.Emailtxtbx.Name = "Emailtxtbx";
             this.Emailtxtbx.Size = new System.Drawing.Size(359, 27);
             this.Emailtxtbx.TabIndex = 7;
@@ -117,7 +127,7 @@
             // 
             this.Emaillbl.AutoSize = true;
             this.Emaillbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Emaillbl.Location = new System.Drawing.Point(31, 182);
+            this.Emaillbl.Location = new System.Drawing.Point(13, 236);
             this.Emaillbl.Name = "Emaillbl";
             this.Emaillbl.Size = new System.Drawing.Size(55, 20);
             this.Emaillbl.TabIndex = 8;
@@ -127,7 +137,7 @@
             // 
             this.ConNumlbl.AutoSize = true;
             this.ConNumlbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ConNumlbl.Location = new System.Drawing.Point(449, 182);
+            this.ConNumlbl.Location = new System.Drawing.Point(432, 236);
             this.ConNumlbl.Name = "ConNumlbl";
             this.ConNumlbl.Size = new System.Drawing.Size(136, 20);
             this.ConNumlbl.TabIndex = 9;
@@ -135,21 +145,21 @@
             // 
             // ConNumtxtbx
             // 
-            this.ConNumtxtbx.Location = new System.Drawing.Point(449, 205);
+            this.ConNumtxtbx.Location = new System.Drawing.Point(432, 259);
             this.ConNumtxtbx.Name = "ConNumtxtbx";
             this.ConNumtxtbx.Size = new System.Drawing.Size(261, 27);
             this.ConNumtxtbx.TabIndex = 10;
             // 
             // Citytxtbx
             // 
-            this.Citytxtbx.Location = new System.Drawing.Point(12, 334);
+            this.Citytxtbx.Location = new System.Drawing.Point(17, 353);
             this.Citytxtbx.Name = "Citytxtbx";
             this.Citytxtbx.Size = new System.Drawing.Size(208, 27);
             this.Citytxtbx.TabIndex = 11;
             // 
             // FAddresstxtbx
             // 
-            this.FAddresstxtbx.Location = new System.Drawing.Point(244, 334);
+            this.FAddresstxtbx.Location = new System.Drawing.Point(249, 353);
             this.FAddresstxtbx.Name = "FAddresstxtbx";
             this.FAddresstxtbx.Size = new System.Drawing.Size(544, 27);
             this.FAddresstxtbx.TabIndex = 12;
@@ -157,7 +167,7 @@
             // Citylbl
             // 
             this.Citylbl.AutoSize = true;
-            this.Citylbl.Location = new System.Drawing.Point(12, 311);
+            this.Citylbl.Location = new System.Drawing.Point(17, 330);
             this.Citylbl.Name = "Citylbl";
             this.Citylbl.Size = new System.Drawing.Size(124, 20);
             this.Citylbl.TabIndex = 13;
@@ -167,7 +177,7 @@
             // 
             this.Addresslbl.AutoSize = true;
             this.Addresslbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Addresslbl.Location = new System.Drawing.Point(12, 282);
+            this.Addresslbl.Location = new System.Drawing.Point(17, 301);
             this.Addresslbl.Name = "Addresslbl";
             this.Addresslbl.Size = new System.Drawing.Size(73, 20);
             this.Addresslbl.TabIndex = 14;
@@ -177,17 +187,92 @@
             // FAddlbl
             // 
             this.FAddlbl.AutoSize = true;
-            this.FAddlbl.Location = new System.Drawing.Point(244, 311);
+            this.FAddlbl.Location = new System.Drawing.Point(249, 330);
             this.FAddlbl.Name = "FAddlbl";
             this.FAddlbl.Size = new System.Drawing.Size(65, 20);
             this.FAddlbl.TabIndex = 15;
             this.FAddlbl.Text = "Address:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(644, 405);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(8, 8);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Submitbtn
+            // 
+            this.Submitbtn.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.Submitbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Submitbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Submitbtn.Location = new System.Drawing.Point(651, 405);
+            this.Submitbtn.Name = "Submitbtn";
+            this.Submitbtn.Size = new System.Drawing.Size(142, 39);
+            this.Submitbtn.TabIndex = 17;
+            this.Submitbtn.Text = "Submit";
+            this.Submitbtn.UseVisualStyleBackColor = false;
+            // 
+            // FormTitle
+            // 
+            this.FormTitle.AutoSize = true;
+            this.FormTitle.Font = new System.Drawing.Font("Yu Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FormTitle.Location = new System.Drawing.Point(220, 13);
+            this.FormTitle.Name = "FormTitle";
+            this.FormTitle.Size = new System.Drawing.Size(333, 39);
+            this.FormTitle.TabIndex = 18;
+            this.FormTitle.Text = "Contact Tracing Form";
+            // 
+            // Inst_lbl
+            // 
+            this.Inst_lbl.AutoSize = true;
+            this.Inst_lbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Inst_lbl.Location = new System.Drawing.Point(8, 100);
+            this.Inst_lbl.Name = "Inst_lbl";
+            this.Inst_lbl.Size = new System.Drawing.Size(217, 20);
+            this.Inst_lbl.TabIndex = 19;
+            this.Inst_lbl.Text = "Please fill up the following:";
+            // 
+            // DesPBbot
+            // 
+            this.DesPBbot.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.DesPBbot.Location = new System.Drawing.Point(-9, 53);
+            this.DesPBbot.Name = "DesPBbot";
+            this.DesPBbot.Size = new System.Drawing.Size(826, 10);
+            this.DesPBbot.TabIndex = 22;
+            this.DesPBbot.TabStop = false;
+            // 
+            // DesPBl
+            // 
+            this.DesPBl.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.DesPBl.Location = new System.Drawing.Point(-14, 23);
+            this.DesPBl.Name = "DesPBl";
+            this.DesPBl.Size = new System.Drawing.Size(228, 15);
+            this.DesPBl.TabIndex = 23;
+            this.DesPBl.TabStop = false;
+            // 
+            // DesPBr
+            // 
+            this.DesPBr.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.DesPBr.Location = new System.Drawing.Point(559, 23);
+            this.DesPBr.Name = "DesPBr";
+            this.DesPBr.Size = new System.Drawing.Size(258, 15);
+            this.DesPBr.TabIndex = 24;
+            this.DesPBr.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(812, 463);
+            this.Controls.Add(this.DesPBr);
+            this.Controls.Add(this.DesPBl);
+            this.Controls.Add(this.DesPBbot);
+            this.Controls.Add(this.Inst_lbl);
+            this.Controls.Add(this.FormTitle);
+            this.Controls.Add(this.Submitbtn);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.FAddlbl);
             this.Controls.Add(this.Addresslbl);
             this.Controls.Add(this.Citylbl);
@@ -206,6 +291,9 @@
             this.Controls.Add(this.Namelbl);
             this.Name = "Form1";
             this.Text = "Contact Tracing Form";
+            ((System.ComponentModel.ISupportInitialize)(this.DesPBbot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DesPBl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DesPBr)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,5 +317,12 @@
         private Label Citylbl;
         private Label Addresslbl;
         private Label FAddlbl;
+        private Button button1;
+        private Button Submitbtn;
+        private Label FormTitle;
+        private Label Inst_lbl;
+        private PictureBox DesPBbot;
+        private PictureBox DesPBl;
+        private PictureBox DesPBr;
     }
 }
