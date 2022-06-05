@@ -21,5 +21,15 @@ namespace Contact_Tracing_Form
         {
 
         }
+
+        private void Submitbtn_Click(object sender, EventArgs e)
+        {
+            StreamWriter file = new StreamWriter(@"C: \Users\PC\source\repos\Contact Tracing Form\Contact Tracing Form\Form Data Input.txt", true);
+            file.WriteLine("Name:" + SNtxtbx + ", " + FNtxtbx + MNtxtbx);
+            file.WriteLine("Email:" + Emailtxtbx);
+            file.WriteLine("Contact Number:" + ConNumtxtbx);
+            file.Close();
+            
+        }
     }
 }

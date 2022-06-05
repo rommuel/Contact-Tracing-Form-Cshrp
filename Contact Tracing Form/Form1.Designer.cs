@@ -213,6 +213,7 @@
             this.Submitbtn.TabIndex = 17;
             this.Submitbtn.Text = "Submit";
             this.Submitbtn.UseVisualStyleBackColor = false;
+            this.Submitbtn.Click += new System.EventHandler(this.Submitbtn_Click);
             // 
             // FormTitle
             // 
