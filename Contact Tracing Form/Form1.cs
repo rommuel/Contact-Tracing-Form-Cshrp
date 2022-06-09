@@ -24,7 +24,10 @@ namespace Contact_Tracing_Form
 
         private void Submitbtn_Click(object sender, EventArgs e)
         {
-            // Defining Inputs as variables
+
+        // Defining Inputs as variables
+
+            // Personal Details
             string SN = SNtxtbx.Text;
             string FN = FNtxtbx.Text;
             string MN = MNtxtbx.Text;
@@ -32,11 +35,19 @@ namespace Contact_Tracing_Form
             string City = Citytxtbx.Text;
             string Email = Emailtxtbx.Text;
             string ConNum = ConNumtxtbx.Text;
+            
+            // date and time-in
+            string Month = Monthtxtbx.Text;
+            string Day = Daytxtbx.Text; 
+            string Year = Yeartxtbx.Text;
+
             string Time_in = Timetxtbx.Text;
             string am_pm = ampmtxtbx.Text;
 
+
             // To avoid unfilled details
             byte counter = 0;
+
 
             if (SN.Length > 0)
             {
@@ -66,6 +77,18 @@ namespace Contact_Tracing_Form
             {
                 counter++;
             }
+            if (Month.Length > 0)
+            {
+                counter++;
+            }
+            if (Day.Length > 0)
+            {
+                counter++;
+            }
+            if (Year.Length > 0)
+            {
+                counter++;
+            }
             if (Time_in.Length > 0)
             {
                 counter++;
@@ -75,27 +98,30 @@ namespace Contact_Tracing_Form
                 counter++;
             }
 
-            if (counter != 9)
+
+            //StreamWriter condition
+
+            if (counter != 12)
             {
-                MessageBox.Show("A detail was left unfilled. Please complete all the blanks.");
-                
+                MessageBox.Show("A detail was left unfilled. Please complete all the blanks. If no answer for the given, please input n/a.");
             }
+            else
+            { 
 
+                StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\Contact Tracing Form\Data Input.txt");
+                file.WriteLine("New input");
+                file.WriteLine("Date: " + Month + "/" + Day + "/" + Year);
+                file.WriteLine("Time: " + Time_in + " " + am_pm);
+                file.WriteLine("Name: " + SN + ", " + FN + " " + MN);
+                file.WriteLine("Email: " + Email + " | " + "Contact Number: " + ConNum);
+                file.WriteLine("Address: " + Address + " | " + "City: " + City);
+                file.Close();
 
+                MessageBox.Show("Data has been saved! You may now proceed.");
+                Application.Restart();
+                Environment.Exit(0);
 
-
-
-
-
-
-
-            StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\Contact Tracing Form\Data Input.txt");
-            file.WriteLine("Name: " + SN + ", " + FN + " " + MN);
-            file.WriteLine("Time: " + Time_in + " " + am_pm);
-            file.WriteLine("Email: " + Email + " | " + "Contact Number: " + ConNum);
-            file.WriteLine("Address: " + Address + " | " + "City: " + City);
-            file.Close();   
-                
+            }    
         }
     }
 }

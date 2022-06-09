@@ -50,11 +50,17 @@
             this.DesPBbot = new System.Windows.Forms.PictureBox();
             this.DesPBl = new System.Windows.Forms.PictureBox();
             this.DesPBr = new System.Windows.Forms.PictureBox();
-            this.Date = new System.Windows.Forms.DateTimePicker();
             this.Timelbl = new System.Windows.Forms.Label();
             this.Timetxtbx = new System.Windows.Forms.TextBox();
             this.ampmtxtbx = new System.Windows.Forms.TextBox();
             this.ampmlbl = new System.Windows.Forms.Label();
+            this.Datelbl = new System.Windows.Forms.Label();
+            this.Monthtxtbx = new System.Windows.Forms.TextBox();
+            this.Daytxtbx = new System.Windows.Forms.TextBox();
+            this.Yeartxtbx = new System.Windows.Forms.TextBox();
+            this.Mnthlbl = new System.Windows.Forms.Label();
+            this.dylbl = new System.Windows.Forms.Label();
+            this.Yrlbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBbot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBr)).BeginInit();
@@ -226,9 +232,9 @@
             this.Inst_lbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Inst_lbl.Location = new System.Drawing.Point(12, 135);
             this.Inst_lbl.Name = "Inst_lbl";
-            this.Inst_lbl.Size = new System.Drawing.Size(217, 20);
+            this.Inst_lbl.Size = new System.Drawing.Size(262, 20);
             this.Inst_lbl.TabIndex = 19;
-            this.Inst_lbl.Text = "Please fill up the following:";
+            this.Inst_lbl.Text = "Please fill up all of the following:";
             // 
             // DesPBbot
             // 
@@ -257,20 +263,11 @@
             this.DesPBr.TabIndex = 24;
             this.DesPBr.TabStop = false;
             // 
-            // Date
-            // 
-            this.Date.CalendarMonthBackground = System.Drawing.Color.Teal;
-            this.Date.CalendarTitleBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Date.Location = new System.Drawing.Point(543, 78);
-            this.Date.Name = "Date";
-            this.Date.Size = new System.Drawing.Size(250, 27);
-            this.Date.TabIndex = 25;
-            // 
             // Timelbl
             // 
             this.Timelbl.AutoSize = true;
             this.Timelbl.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Timelbl.Location = new System.Drawing.Point(543, 117);
+            this.Timelbl.Location = new System.Drawing.Point(558, 125);
             this.Timelbl.Name = "Timelbl";
             this.Timelbl.Size = new System.Drawing.Size(78, 23);
             this.Timelbl.TabIndex = 26;
@@ -278,14 +275,14 @@
             // 
             // Timetxtbx
             // 
-            this.Timetxtbx.Location = new System.Drawing.Point(627, 116);
+            this.Timetxtbx.Location = new System.Drawing.Point(642, 124);
             this.Timetxtbx.Name = "Timetxtbx";
             this.Timetxtbx.Size = new System.Drawing.Size(70, 27);
             this.Timetxtbx.TabIndex = 27;
             // 
             // ampmtxtbx
             // 
-            this.ampmtxtbx.Location = new System.Drawing.Point(703, 117);
+            this.ampmtxtbx.Location = new System.Drawing.Point(718, 125);
             this.ampmtxtbx.Name = "ampmtxtbx";
             this.ampmtxtbx.Size = new System.Drawing.Size(58, 27);
             this.ampmtxtbx.TabIndex = 28;
@@ -294,22 +291,90 @@
             // 
             this.ampmlbl.AutoSize = true;
             this.ampmlbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ampmlbl.Location = new System.Drawing.Point(703, 147);
+            this.ampmlbl.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.ampmlbl.Location = new System.Drawing.Point(718, 155);
             this.ampmlbl.Name = "ampmlbl";
             this.ampmlbl.Size = new System.Drawing.Size(59, 20);
             this.ampmlbl.TabIndex = 29;
             this.ampmlbl.Text = "AM/PM";
+            // 
+            // Datelbl
+            // 
+            this.Datelbl.AutoSize = true;
+            this.Datelbl.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Datelbl.Location = new System.Drawing.Point(558, 92);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.Size = new System.Drawing.Size(78, 23);
+            this.Datelbl.TabIndex = 30;
+            this.Datelbl.Text = "Time in:";
+            // 
+            // Monthtxtbx
+            // 
+            this.Monthtxtbx.Location = new System.Drawing.Point(642, 92);
+            this.Monthtxtbx.Name = "Monthtxtbx";
+            this.Monthtxtbx.Size = new System.Drawing.Size(39, 27);
+            this.Monthtxtbx.TabIndex = 31;
+            // 
+            // Daytxtbx
+            // 
+            this.Daytxtbx.Location = new System.Drawing.Point(687, 92);
+            this.Daytxtbx.Name = "Daytxtbx";
+            this.Daytxtbx.Size = new System.Drawing.Size(34, 27);
+            this.Daytxtbx.TabIndex = 32;
+            // 
+            // Yeartxtbx
+            // 
+            this.Yeartxtbx.Location = new System.Drawing.Point(727, 92);
+            this.Yeartxtbx.Name = "Yeartxtbx";
+            this.Yeartxtbx.Size = new System.Drawing.Size(70, 27);
+            this.Yeartxtbx.TabIndex = 33;
+            // 
+            // Mnthlbl
+            // 
+            this.Mnthlbl.AutoSize = true;
+            this.Mnthlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Mnthlbl.Location = new System.Drawing.Point(642, 74);
+            this.Mnthlbl.Name = "Mnthlbl";
+            this.Mnthlbl.Size = new System.Drawing.Size(38, 20);
+            this.Mnthlbl.TabIndex = 34;
+            this.Mnthlbl.Text = "mm:";
+            // 
+            // dylbl
+            // 
+            this.dylbl.AutoSize = true;
+            this.dylbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dylbl.Location = new System.Drawing.Point(686, 74);
+            this.dylbl.Name = "dylbl";
+            this.dylbl.Size = new System.Drawing.Size(30, 20);
+            this.dylbl.TabIndex = 35;
+            this.dylbl.Text = "dd:";
+            // 
+            // Yrlbl
+            // 
+            this.Yrlbl.AutoSize = true;
+            this.Yrlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Yrlbl.Location = new System.Drawing.Point(727, 74);
+            this.Yrlbl.Name = "Yrlbl";
+            this.Yrlbl.Size = new System.Drawing.Size(40, 20);
+            this.Yrlbl.TabIndex = 36;
+            this.Yrlbl.Text = "yyyy:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 504);
+            this.Controls.Add(this.Yrlbl);
+            this.Controls.Add(this.dylbl);
+            this.Controls.Add(this.Mnthlbl);
+            this.Controls.Add(this.Yeartxtbx);
+            this.Controls.Add(this.Daytxtbx);
+            this.Controls.Add(this.Monthtxtbx);
+            this.Controls.Add(this.Datelbl);
             this.Controls.Add(this.ampmlbl);
             this.Controls.Add(this.ampmtxtbx);
             this.Controls.Add(this.Timetxtbx);
             this.Controls.Add(this.Timelbl);
-            this.Controls.Add(this.Date);
             this.Controls.Add(this.DesPBr);
             this.Controls.Add(this.DesPBl);
             this.Controls.Add(this.DesPBbot);
@@ -366,10 +431,16 @@
         private PictureBox DesPBbot;
         private PictureBox DesPBl;
         private PictureBox DesPBr;
-        private DateTimePicker Date;
         private Label Timelbl;
         private TextBox Timetxtbx;
         private TextBox ampmtxtbx;
         private Label ampmlbl;
+        private Label Datelbl;
+        private TextBox Monthtxtbx;
+        private TextBox Daytxtbx;
+        private TextBox Yeartxtbx;
+        private Label Mnthlbl;
+        private Label dylbl;
+        private Label Yrlbl;
     }
 }
