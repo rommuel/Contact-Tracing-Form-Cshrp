@@ -304,9 +304,9 @@
             this.Datelbl.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Datelbl.Location = new System.Drawing.Point(558, 92);
             this.Datelbl.Name = "Datelbl";
-            this.Datelbl.Size = new System.Drawing.Size(78, 23);
+            this.Datelbl.Size = new System.Drawing.Size(55, 23);
             this.Datelbl.TabIndex = 30;
-            this.Datelbl.Text = "Time in:";
+            this.Datelbl.Text = "Date:";
             // 
             // Monthtxtbx
             // 

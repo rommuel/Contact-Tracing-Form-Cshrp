@@ -106,9 +106,10 @@ namespace Contact_Tracing_Form
                 MessageBox.Show("A detail was left unfilled. Please complete all the blanks. If no answer for the given, please input n/a.");
             }
             else
-            { 
+            {
 
-                StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\Contact Tracing Form\Data Input.txt");
+                StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\Contact Tracing Form\Data Input.txt", true);
+                file.WriteLine(" ");
                 file.WriteLine("New input");
                 file.WriteLine("Date: " + Month + "/" + Day + "/" + Year);
                 file.WriteLine("Time: " + Time_in + " " + am_pm);

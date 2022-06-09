@@ -1,6 +1,23 @@
+ 
+
+ 
 New input
 Date: 06/09/2022
-Time: 6:31 PM
+Time: 6:49 PM
+Name: Rivera, Rommuel Umayao
+Email: rommuelrivera3@gmail.com | Contact Number: 09123456789
+Address: 123 Sta. Mesa | City: Valenzuela City
+ 
+New input
+Date: 06/09/2022
+Time: 6:51 PM
 Name: Dela Cruz, Juan Santos
-Email: juandelacruz@gmail.com | Contact Number: 09060860434
-Address: 123 Brgy. 456 | City: Manila City
+Email: juandelacruz@gmail.com | Contact Number: 09123456789
+Address: 123 Sta Mesa | City: Manila City
+ 
+New input
+Date: 06/09/2022
+Time: 6:56 PM
+Name: Rivera, Rommuel Umayao
+Email: rommuelrivera3@gmail.com | Contact Number: 09123456789
+Address: 1223 Sta. Mesa | City: Manila City
