@@ -44,7 +44,6 @@
             this.Citylbl = new System.Windows.Forms.Label();
             this.Addresslbl = new System.Windows.Forms.Label();
             this.FAddlbl = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.Submitbtn = new System.Windows.Forms.Button();
             this.FormTitle = new System.Windows.Forms.Label();
             this.Inst_lbl = new System.Windows.Forms.Label();
@@ -198,15 +197,6 @@
             this.FAddlbl.TabIndex = 15;
             this.FAddlbl.Text = "Address:";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(644, 405);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(8, 8);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Submitbtn
             // 
             this.Submitbtn.BackColor = System.Drawing.Color.MediumAquamarine;
@@ -326,7 +316,6 @@
             this.Controls.Add(this.Inst_lbl);
             this.Controls.Add(this.FormTitle);
             this.Controls.Add(this.Submitbtn);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.FAddlbl);
             this.Controls.Add(this.Addresslbl);
             this.Controls.Add(this.Citylbl);
@@ -371,7 +360,6 @@
         private Label Citylbl;
         private Label Addresslbl;
         private Label FAddlbl;
-        private Button button1;
         private Button Submitbtn;
         private Label FormTitle;
         private Label Inst_lbl;

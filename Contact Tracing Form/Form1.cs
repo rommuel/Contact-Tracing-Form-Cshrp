@@ -35,10 +35,63 @@ namespace Contact_Tracing_Form
             string Time_in = Timetxtbx.Text;
             string am_pm = ampmtxtbx.Text;
 
-            
+            // To avoid unfilled details
+            byte counter = 0;
+
+            if (SN.Length > 0)
+            {
+                counter++;
+            }
+            if (FN.Length > 0)
+            {
+                counter++;
+            }
+            if (MN.Length > 0)
+            {
+                counter++;
+            }
+            if (Address.Length > 0)
+            {
+                counter++;
+            }
+            if (City.Length > 0)
+            {
+                counter++;
+            }
+            if (Email.Length > 0)
+            {
+                counter++;
+            }
+            if (ConNum.Length > 0)
+            {
+                counter++;
+            }
+            if (Time_in.Length > 0)
+            {
+                counter++;
+            }
+            if (am_pm.Length > 0)
+            {
+                counter++;
+            }
+
+            if (counter != 9)
+            {
+                MessageBox.Show("A detail was left unfilled. Please complete all the blanks.");
+                
+            }
+
+
+
+
+
+
+
+
+
             StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\Contact Tracing Form\Data Input.txt");
             file.WriteLine("Name: " + SN + ", " + FN + " " + MN);
-            file.WriteLine("Time: " + Time_in + am_pm);
+            file.WriteLine("Time: " + Time_in + " " + am_pm);
             file.WriteLine("Email: " + Email + " | " + "Contact Number: " + ConNum);
             file.WriteLine("Address: " + Address + " | " + "City: " + City);
             file.Close();   
