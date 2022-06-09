@@ -24,16 +24,25 @@ namespace Contact_Tracing_Form
 
         private void Submitbtn_Click(object sender, EventArgs e)
         {
-            
-            StreamWriter writer = new(@"C:\Users\PC\Documents\CT-output.txt", true);
-            {
-                writer.WriteLine("New Input:");
-                writer.WriteLine("Name:" + SNtxtbx + ", " + FNtxtbx + MNtxtbx);
-                writer.WriteLine("Email:" + Emailtxtbx);
-                writer.WriteLine("Contact Number:" + ConNumtxtbx);
-                
-            }
+            // Defining Inputs as variables
+            string SN = SNtxtbx.Text;
+            string FN = FNtxtbx.Text;
+            string MN = MNtxtbx.Text;
+            string Address = FAddresstxtbx.Text;
+            string City = Citytxtbx.Text;
+            string Email = Emailtxtbx.Text;
+            string ConNum = ConNumtxtbx.Text;
+            string Time_in = Timetxtbx.Text;
+            string am_pm = ampmtxtbx.Text;
 
+            
+            StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\Contact Tracing Form\Data Input.txt");
+            file.WriteLine("Name: " + SN + ", " + FN + " " + MN);
+            file.WriteLine("Time: " + Time_in + am_pm);
+            file.WriteLine("Email: " + Email + " | " + "Contact Number: " + ConNum);
+            file.WriteLine("Address: " + Address + " | " + "City: " + City);
+            file.Close();   
+                
         }
     }
 }
