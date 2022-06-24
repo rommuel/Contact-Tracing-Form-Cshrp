@@ -134,7 +134,6 @@ namespace Contact_Tracing_Form
             if (password == "moriveraaa")
             {
                 //Opens Admin Window
-                Environment.Exit(0);
                 Form2 info = new Form2();
                 info.ShowDialog();
             }
