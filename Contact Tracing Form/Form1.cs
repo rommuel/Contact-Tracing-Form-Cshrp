@@ -124,5 +124,25 @@ namespace Contact_Tracing_Form
 
             }    
         }
+
+        private void SortAccbtn_Click(object sender, EventArgs e)
+        {
+            //Admin Password checker
+            string password = SortAcctxtbx_psw.Text;
+
+            //Password
+            if (password == "moriveraaa")
+            {
+                //Opens Admin Window
+                Environment.Exit(0);
+                Form2 info = new Form2();
+                info.ShowDialog();
+            }
+            else
+            {
+            MessageBox.Show("Wrong Password.");
+            } 
+        }
     }
 }
+// Folder Path: "C:\Users\PC\source\repos\Contact Tracing Form"
