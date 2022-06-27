@@ -109,13 +109,7 @@ namespace Contact_Tracing_Form
             {
 
                 StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\Contact Tracing Form\Data Input.txt", true);
-                file.WriteLine(" ");
-                file.WriteLine("New input");
-                file.WriteLine("Date: " + Month + "/" + Day + "/" + Year);
-                file.WriteLine("Time: " + Time_in + " " + am_pm);
-                file.WriteLine("Name: " + SN + ", " + FN + " " + MN);
-                file.WriteLine("Email: " + Email + " | " + "Contact Number: " + ConNum);
-                file.WriteLine("Address: " + Address + " | " + "City: " + City);
+                file.WriteLine("Name: " + SN + ", " + FN + " " + MN + " " + "Email: " + Email + " | " + "Contact Number: " + ConNum + "Address: " + Address + " | " + "City: " + City + " " + "Date: " + Month + "/" + Day + "/" + Year + " " + "Time: " + Time_in + " " + am_pm);
                 file.Close();
 
                 MessageBox.Show("Data has been saved! You may now proceed.");

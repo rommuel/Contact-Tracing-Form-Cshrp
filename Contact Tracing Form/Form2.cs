@@ -19,7 +19,9 @@ namespace Contact_Tracing_Form
 
         private void ShowDatabtn_Click(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader(@"C: \Users\PC\source\repos\Contact Tracing Form\Data Input.txt");
+
+
+            StreamReader reader = new StreamReader(@"C:\Users\PC\source\repos\ContactTracingForm\DataInput.txt");
             reader.ReadToEnd();
 
             List<string> Names = new List<string>();
@@ -29,22 +31,20 @@ namespace Contact_Tracing_Form
             string FirstName = FNtxtbx.Text;
             while (!reader.EndOfStream)
             {
-                string Name_Data = reader.ReadLine();
-                if (Name_Data.Contains(Surname))
-                {
-                    Names.Add(Name_Data);
+                string namedata = reader.ReadLine();
+                if (namedata.Contains(Surname))
+                { 
+                    Names.Add(namedata);
                 }
             reader.Close();
-            StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\Contact Tracing Form\Sorted Data View.txt", true);
-            foreach (string item in Names)
-            {
-                    MessageBox.Show(Name_Data);
-                    file.WriteLine(Name_Data);
-                    file.Close();
-                    
+            StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\ContactTracingForm\SortedDataView.txt");
                 
-                    
-                    
+            foreach (string sorteddata in Names)
+
+            {
+                MessageBox.Show(sorteddata);
+                file.WriteLine(sorteddata);
+                file.Close();
             }
             }
         }

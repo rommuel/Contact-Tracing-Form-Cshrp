@@ -64,6 +64,7 @@
             this.SortAcclbl = new System.Windows.Forms.Label();
             this.SortAcctxtbx_psw = new System.Windows.Forms.TextBox();
             this.SortAccbtn = new System.Windows.Forms.Button();
+            this.pswlbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBbot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBr)).BeginInit();
@@ -365,7 +366,7 @@
             // SortAcclbl
             // 
             this.SortAcclbl.AutoSize = true;
-            this.SortAcclbl.Location = new System.Drawing.Point(17, 493);
+            this.SortAcclbl.Location = new System.Drawing.Point(21, 490);
             this.SortAcclbl.Name = "SortAcclbl";
             this.SortAcclbl.Size = new System.Drawing.Size(60, 20);
             this.SortAcclbl.TabIndex = 37;
@@ -374,18 +375,17 @@
             // SortAcctxtbx_psw
             // 
             this.SortAcctxtbx_psw.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.SortAcctxtbx_psw.Location = new System.Drawing.Point(17, 516);
+            this.SortAcctxtbx_psw.Location = new System.Drawing.Point(21, 513);
             this.SortAcctxtbx_psw.Name = "SortAcctxtbx_psw";
             this.SortAcctxtbx_psw.Size = new System.Drawing.Size(182, 27);
             this.SortAcctxtbx_psw.TabIndex = 38;
-            this.SortAcctxtbx_psw.Text = "Password";
             // 
             // SortAccbtn
             // 
             this.SortAccbtn.BackColor = System.Drawing.Color.CadetBlue;
             this.SortAccbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SortAccbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SortAccbtn.Location = new System.Drawing.Point(205, 516);
+            this.SortAccbtn.Location = new System.Drawing.Point(220, 513);
             this.SortAccbtn.Name = "SortAccbtn";
             this.SortAccbtn.Size = new System.Drawing.Size(94, 29);
             this.SortAccbtn.TabIndex = 39;
@@ -393,11 +393,21 @@
             this.SortAccbtn.UseVisualStyleBackColor = false;
             this.SortAccbtn.Click += new System.EventHandler(this.SortAccbtn_Click);
             // 
+            // pswlbl
+            // 
+            this.pswlbl.AutoSize = true;
+            this.pswlbl.Location = new System.Drawing.Point(52, 543);
+            this.pswlbl.Name = "pswlbl";
+            this.pswlbl.Size = new System.Drawing.Size(111, 20);
+            this.pswlbl.TabIndex = 40;
+            this.pswlbl.Text = "Enter Password:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 572);
+            this.Controls.Add(this.pswlbl);
             this.Controls.Add(this.SortAccbtn);
             this.Controls.Add(this.SortAcctxtbx_psw);
             this.Controls.Add(this.SortAcclbl);
@@ -482,5 +492,6 @@
         private Label SortAcclbl;
         private TextBox SortAcctxtbx_psw;
         private Button SortAccbtn;
+        private Label pswlbl;
     }
 }

@@ -39,6 +39,8 @@
             this.ShowDatabtn = new System.Windows.Forms.Button();
             this.SNtxtbx = new System.Windows.Forms.TextBox();
             this.FNtxtbx = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBF2t)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBF2b)).BeginInit();
             this.SuspendLayout();
@@ -136,27 +138,45 @@
             // 
             // SNtxtbx
             // 
-            this.SNtxtbx.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.SNtxtbx.Location = new System.Drawing.Point(12, 203);
+            this.SNtxtbx.ForeColor = System.Drawing.Color.Black;
+            this.SNtxtbx.Location = new System.Drawing.Point(95, 203);
             this.SNtxtbx.Name = "SNtxtbx";
             this.SNtxtbx.Size = new System.Drawing.Size(164, 27);
             this.SNtxtbx.TabIndex = 9;
-            this.SNtxtbx.Text = "Enter Surname";
             // 
             // FNtxtbx
             // 
-            this.FNtxtbx.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.FNtxtbx.Location = new System.Drawing.Point(12, 236);
+            this.FNtxtbx.ForeColor = System.Drawing.Color.Black;
+            this.FNtxtbx.Location = new System.Drawing.Point(95, 236);
             this.FNtxtbx.Name = "FNtxtbx";
             this.FNtxtbx.Size = new System.Drawing.Size(258, 27);
             this.FNtxtbx.TabIndex = 10;
-            this.FNtxtbx.Text = "Enter First name";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 210);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 20);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Surname:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 236);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 20);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "First Name:";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.FNtxtbx);
             this.Controls.Add(this.SNtxtbx);
             this.Controls.Add(this.ShowDatabtn);
@@ -190,5 +210,7 @@
         private Button ShowDatabtn;
         private TextBox SNtxtbx;
         private TextBox FNtxtbx;
+        private Label label1;
+        private Label label2;
     }
 }
