@@ -35,12 +35,21 @@
             this.Sortlbl = new System.Windows.Forms.Label();
             this.Namelbl = new System.Windows.Forms.Label();
             this.Datelbl = new System.Windows.Forms.Label();
-            this.Timelbl = new System.Windows.Forms.Label();
+            this.Loclbl = new System.Windows.Forms.Label();
             this.ShowDatabtn = new System.Windows.Forms.Button();
             this.SNtxtbx = new System.Windows.Forms.TextBox();
             this.FNtxtbx = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.mmlbl = new System.Windows.Forms.Label();
+            this.mmtxtbx = new System.Windows.Forms.TextBox();
+            this.ddtxtbx = new System.Windows.Forms.TextBox();
+            this.Yeartxtbx = new System.Windows.Forms.TextBox();
+            this.ddlbl = new System.Windows.Forms.Label();
+            this.yearlbl = new System.Windows.Forms.Label();
+            this.citytxtbx = new System.Windows.Forms.TextBox();
+            this.citylbl = new System.Windows.Forms.Label();
+            this.Allrecbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBF2t)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBF2b)).BeginInit();
             this.SuspendLayout();
@@ -112,16 +121,16 @@
             this.Datelbl.TabIndex = 6;
             this.Datelbl.Text = "Date:";
             // 
-            // Timelbl
+            // Loclbl
             // 
-            this.Timelbl.AutoSize = true;
-            this.Timelbl.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Timelbl.Location = new System.Drawing.Point(12, 276);
-            this.Timelbl.Name = "Timelbl";
-            this.Timelbl.Size = new System.Drawing.Size(59, 25);
-            this.Timelbl.TabIndex = 7;
-            this.Timelbl.Text = "Time:";
-            this.Timelbl.Click += new System.EventHandler(this.Timelbl_Click);
+            this.Loclbl.AutoSize = true;
+            this.Loclbl.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Loclbl.Location = new System.Drawing.Point(12, 276);
+            this.Loclbl.Name = "Loclbl";
+            this.Loclbl.Size = new System.Drawing.Size(92, 25);
+            this.Loclbl.TabIndex = 7;
+            this.Loclbl.Text = "Location:";
+            this.Loclbl.Click += new System.EventHandler(this.Timelbl_Click);
             // 
             // ShowDatabtn
             // 
@@ -170,17 +179,105 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "First Name:";
             // 
+            // mmlbl
+            // 
+            this.mmlbl.AutoSize = true;
+            this.mmlbl.Location = new System.Drawing.Point(462, 237);
+            this.mmlbl.Name = "mmlbl";
+            this.mmlbl.Size = new System.Drawing.Size(38, 20);
+            this.mmlbl.TabIndex = 13;
+            this.mmlbl.Text = "mm:";
+            this.mmlbl.Click += new System.EventHandler(this.mmlbl_Click);
+            // 
+            // mmtxtbx
+            // 
+            this.mmtxtbx.Location = new System.Drawing.Point(462, 207);
+            this.mmtxtbx.Name = "mmtxtbx";
+            this.mmtxtbx.Size = new System.Drawing.Size(35, 27);
+            this.mmtxtbx.TabIndex = 15;
+            // 
+            // ddtxtbx
+            // 
+            this.ddtxtbx.Location = new System.Drawing.Point(514, 207);
+            this.ddtxtbx.Name = "ddtxtbx";
+            this.ddtxtbx.Size = new System.Drawing.Size(35, 27);
+            this.ddtxtbx.TabIndex = 16;
+            // 
+            // Yeartxtbx
+            // 
+            this.Yeartxtbx.Location = new System.Drawing.Point(566, 207);
+            this.Yeartxtbx.Name = "Yeartxtbx";
+            this.Yeartxtbx.Size = new System.Drawing.Size(58, 27);
+            this.Yeartxtbx.TabIndex = 17;
+            // 
+            // ddlbl
+            // 
+            this.ddlbl.AutoSize = true;
+            this.ddlbl.Location = new System.Drawing.Point(514, 236);
+            this.ddlbl.Name = "ddlbl";
+            this.ddlbl.Size = new System.Drawing.Size(30, 20);
+            this.ddlbl.TabIndex = 18;
+            this.ddlbl.Text = "dd:";
+            // 
+            // yearlbl
+            // 
+            this.yearlbl.AutoSize = true;
+            this.yearlbl.Location = new System.Drawing.Point(575, 236);
+            this.yearlbl.Name = "yearlbl";
+            this.yearlbl.Size = new System.Drawing.Size(40, 20);
+            this.yearlbl.TabIndex = 19;
+            this.yearlbl.Text = "yyyy:";
+            // 
+            // citytxtbx
+            // 
+            this.citytxtbx.Location = new System.Drawing.Point(55, 320);
+            this.citytxtbx.Name = "citytxtbx";
+            this.citytxtbx.Size = new System.Drawing.Size(212, 27);
+            this.citytxtbx.TabIndex = 20;
+            // 
+            // citylbl
+            // 
+            this.citylbl.AutoSize = true;
+            this.citylbl.Location = new System.Drawing.Point(12, 320);
+            this.citylbl.Name = "citylbl";
+            this.citylbl.Size = new System.Drawing.Size(37, 20);
+            this.citylbl.TabIndex = 21;
+            this.citylbl.Text = "City:";
+            // 
+            // Allrecbtn
+            // 
+            this.Allrecbtn.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.Allrecbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Allrecbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Allrecbtn.Location = new System.Drawing.Point(629, 93);
+            this.Allrecbtn.Name = "Allrecbtn";
+            this.Allrecbtn.Size = new System.Drawing.Size(159, 38);
+            this.Allrecbtn.TabIndex = 22;
+            this.Allrecbtn.Text = "Show All Records";
+            this.Allrecbtn.UseVisualStyleBackColor = false;
+            this.Allrecbtn.Click += new System.EventHandler(this.Allrecbtn_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Allrecbtn);
+            this.Controls.Add(this.citylbl);
+            this.Controls.Add(this.citytxtbx);
+            this.Controls.Add(this.yearlbl);
+            this.Controls.Add(this.ddlbl);
+            this.Controls.Add(this.Yeartxtbx);
+            this.Controls.Add(this.ddtxtbx);
+            this.Controls.Add(this.mmtxtbx);
+            this.Controls.Add(this.mmlbl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.FNtxtbx);
             this.Controls.Add(this.SNtxtbx);
             this.Controls.Add(this.ShowDatabtn);
-            this.Controls.Add(this.Timelbl);
+            this.Controls.Add(this.Loclbl);
             this.Controls.Add(this.Datelbl);
             this.Controls.Add(this.Namelbl);
             this.Controls.Add(this.Sortlbl);
@@ -190,6 +287,7 @@
             this.Controls.Add(this.DesPBF2t);
             this.Name = "Form2";
             this.Text = "Admin (Form Data)";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DesPBF2t)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBF2b)).EndInit();
             this.ResumeLayout(false);
@@ -206,11 +304,20 @@
         private Label Sortlbl;
         private Label Namelbl;
         private Label Datelbl;
-        private Label Timelbl;
+        private Label Loclbl;
         private Button ShowDatabtn;
         private TextBox SNtxtbx;
         private TextBox FNtxtbx;
         private Label label1;
         private Label label2;
+        private Label mmlbl;
+        private TextBox mmtxtbx;
+        private TextBox ddtxtbx;
+        private TextBox Yeartxtbx;
+        private Label ddlbl;
+        private Label yearlbl;
+        private TextBox citytxtbx;
+        private Label citylbl;
+        private Button Allrecbtn;
     }
 }

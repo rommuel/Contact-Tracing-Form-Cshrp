@@ -28,27 +28,60 @@ namespace Contact_Tracing_Form
             //Sort by Name
             string Surname = SNtxtbx.Text;
             string FirstName = FNtxtbx.Text;
+            string Date = mmtxtbx.Text + "/" + ddtxtbx.Text + "/" + Yeartxtbx.Text;
+            string Location = citytxtbx.Text;
             while (!reader.EndOfStream)
             {
                 string filteredname = reader.ReadLine();
                 if (filteredname.Contains(Surname))
                 { 
-                    MessageBox.Show(filteredname); 
-                    Names_Grouped.Add(filteredname);
+                    if (filteredname.Contains(FirstName))
+                    {
+                       if (filteredname.Contains(Date))
+                        {
+                            if(filteredname.Contains(Location))
+                            {
+                                MessageBox.Show(filteredname);
+                                Names_Grouped.Add(filteredname);
+                            }
+                        }
+                            
+                    }
+  
                 }   
             }
             reader.Close();
-
-            StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\Contact Tracing Form\Sorted Data Viewer.txt");
-            foreach (string name in Names_Grouped)
-            {
-                MessageBox.Show(name);
-            }   
         }
 
         private void Timelbl_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mmlbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Allrecbtn_Click(object sender, EventArgs e)
+        {
+            StreamReader reader = new StreamReader(@"C:\Users\PC\source\repos\Contact Tracing Form\Data Input.txt");
+            while(!reader.EndOfStream)
+            {
+                string Allrecords = reader.ReadLine();
+                MessageBox.Show(Allrecords);
+            }
+                
         }
     }
 }
