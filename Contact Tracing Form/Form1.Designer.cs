@@ -374,7 +374,7 @@
             // 
             // SortAcctxtbx_psw
             // 
-            this.SortAcctxtbx_psw.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.SortAcctxtbx_psw.ForeColor = System.Drawing.Color.Black;
             this.SortAcctxtbx_psw.Location = new System.Drawing.Point(21, 513);
             this.SortAcctxtbx_psw.Name = "SortAcctxtbx_psw";
             this.SortAcctxtbx_psw.Size = new System.Drawing.Size(182, 27);

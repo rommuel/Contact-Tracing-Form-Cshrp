@@ -26,33 +26,33 @@ namespace Contact_Tracing_Form
             List<string> Names_Grouped = new List<string>();
 
             //Sort by Name
-            string Surname = SNtxtbx.Text;
+            string Surname = SNtxtbx.Text + ",";
             string FirstName = FNtxtbx.Text;
             string Date = mmtxtbx.Text + "/" + ddtxtbx.Text + "/" + Yeartxtbx.Text;
             string Location = citytxtbx.Text;
             while (!reader.EndOfStream)
             {
                 string filteredname = reader.ReadLine();
+
                 if (filteredname.Contains(Surname))
-                { 
+                {
                     if (filteredname.Contains(FirstName))
                     {
-                       if (filteredname.Contains(Date))
+                        if (filteredname.Contains(Date))
                         {
-                            if(filteredname.Contains(Location))
+                            if (filteredname.Contains(Location))
                             {
                                 MessageBox.Show(filteredname);
                                 Names_Grouped.Add(filteredname);
                             }
                         }
-                            
                     }
-  
-                }   
+                }
+                
             }
-            reader.Close();
+            reader.Close();  
         }
-
+        
         private void Timelbl_Click(object sender, EventArgs e)
         {
 
