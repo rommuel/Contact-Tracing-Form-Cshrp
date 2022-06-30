@@ -3,3 +3,4 @@ Name: Rivera, Rommuel U. Email: rommuelrivera3@gmail.com | Contact Number: 09123
 Name: Villanueva, Johan J. Email: johan@gmail.com | Contact Number: 09123456788 Address: 1234 Manila | City: Manila City Date: 06/27/2022 Time: 7:59 PM
 Name: Madrigalejos, Danilo n/a Email: danilo@gmail.com | Contact Number: 09876543210 Address: 12345 Sta. Mesa  | City: Manila City Date: 07/01/2022 Time: 7:54 PM
 Name: Rivera, Sammuel G. Email: sammuel@gmail.com | Contact Number: 09234567897Address: 1234 Dasmarinas | City: Cavite City Date: 06/29/2022 Time: 4:45 PM
+Name: Rivera, Rommuel  U. Email: rommuelrivera3@gmail.com | Contact Number: 09060860434Address: Blk. 1 Lt. 45 Victoria Hms. Gen. T. De Leon | City: Valenzuela City Date: 06/30/2022 Time: 10:50 PM

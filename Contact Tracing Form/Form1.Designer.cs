@@ -65,9 +65,18 @@
             this.SortAcctxtbx_psw = new System.Windows.Forms.TextBox();
             this.SortAccbtn = new System.Windows.Forms.Button();
             this.pswlbl = new System.Windows.Forms.Label();
+            this.dividerpb = new System.Windows.Forms.PictureBox();
+            this.Qrgenbtn = new System.Windows.Forms.Button();
+            this.Camerabtn = new System.Windows.Forms.Button();
+            this.QRgenpb = new System.Windows.Forms.PictureBox();
+            this.Webcampb = new System.Windows.Forms.PictureBox();
+            this.QRlbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBbot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dividerpb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QRgenpb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Webcampb)).BeginInit();
             this.SuspendLayout();
             // 
             // Namelbl
@@ -212,9 +221,9 @@
             this.Submitbtn.BackColor = System.Drawing.Color.MediumAquamarine;
             this.Submitbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Submitbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Submitbtn.Location = new System.Drawing.Point(655, 439);
+            this.Submitbtn.Location = new System.Drawing.Point(619, 462);
             this.Submitbtn.Name = "Submitbtn";
-            this.Submitbtn.Size = new System.Drawing.Size(142, 39);
+            this.Submitbtn.Size = new System.Drawing.Size(142, 35);
             this.Submitbtn.TabIndex = 17;
             this.Submitbtn.Text = "Submit";
             this.Submitbtn.UseVisualStyleBackColor = false;
@@ -271,7 +280,7 @@
             // 
             this.Timelbl.AutoSize = true;
             this.Timelbl.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Timelbl.Location = new System.Drawing.Point(558, 125);
+            this.Timelbl.Location = new System.Drawing.Point(571, 130);
             this.Timelbl.Name = "Timelbl";
             this.Timelbl.Size = new System.Drawing.Size(78, 23);
             this.Timelbl.TabIndex = 26;
@@ -279,14 +288,14 @@
             // 
             // Timetxtbx
             // 
-            this.Timetxtbx.Location = new System.Drawing.Point(642, 124);
+            this.Timetxtbx.Location = new System.Drawing.Point(655, 129);
             this.Timetxtbx.Name = "Timetxtbx";
             this.Timetxtbx.Size = new System.Drawing.Size(70, 27);
             this.Timetxtbx.TabIndex = 27;
             // 
             // ampmtxtbx
             // 
-            this.ampmtxtbx.Location = new System.Drawing.Point(718, 125);
+            this.ampmtxtbx.Location = new System.Drawing.Point(731, 130);
             this.ampmtxtbx.Name = "ampmtxtbx";
             this.ampmtxtbx.Size = new System.Drawing.Size(58, 27);
             this.ampmtxtbx.TabIndex = 28;
@@ -296,7 +305,7 @@
             this.ampmlbl.AutoSize = true;
             this.ampmlbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ampmlbl.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.ampmlbl.Location = new System.Drawing.Point(718, 155);
+            this.ampmlbl.Location = new System.Drawing.Point(731, 160);
             this.ampmlbl.Name = "ampmlbl";
             this.ampmlbl.Size = new System.Drawing.Size(59, 20);
             this.ampmlbl.TabIndex = 29;
@@ -306,7 +315,7 @@
             // 
             this.Datelbl.AutoSize = true;
             this.Datelbl.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Datelbl.Location = new System.Drawing.Point(558, 92);
+            this.Datelbl.Location = new System.Drawing.Point(571, 97);
             this.Datelbl.Name = "Datelbl";
             this.Datelbl.Size = new System.Drawing.Size(55, 23);
             this.Datelbl.TabIndex = 30;
@@ -314,21 +323,21 @@
             // 
             // Monthtxtbx
             // 
-            this.Monthtxtbx.Location = new System.Drawing.Point(642, 92);
+            this.Monthtxtbx.Location = new System.Drawing.Point(655, 97);
             this.Monthtxtbx.Name = "Monthtxtbx";
             this.Monthtxtbx.Size = new System.Drawing.Size(39, 27);
             this.Monthtxtbx.TabIndex = 31;
             // 
             // Daytxtbx
             // 
-            this.Daytxtbx.Location = new System.Drawing.Point(687, 92);
+            this.Daytxtbx.Location = new System.Drawing.Point(700, 97);
             this.Daytxtbx.Name = "Daytxtbx";
             this.Daytxtbx.Size = new System.Drawing.Size(34, 27);
             this.Daytxtbx.TabIndex = 32;
             // 
             // Yeartxtbx
             // 
-            this.Yeartxtbx.Location = new System.Drawing.Point(727, 92);
+            this.Yeartxtbx.Location = new System.Drawing.Point(740, 97);
             this.Yeartxtbx.Name = "Yeartxtbx";
             this.Yeartxtbx.Size = new System.Drawing.Size(70, 27);
             this.Yeartxtbx.TabIndex = 33;
@@ -337,7 +346,7 @@
             // 
             this.Mnthlbl.AutoSize = true;
             this.Mnthlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Mnthlbl.Location = new System.Drawing.Point(642, 74);
+            this.Mnthlbl.Location = new System.Drawing.Point(655, 79);
             this.Mnthlbl.Name = "Mnthlbl";
             this.Mnthlbl.Size = new System.Drawing.Size(38, 20);
             this.Mnthlbl.TabIndex = 34;
@@ -347,7 +356,7 @@
             // 
             this.dylbl.AutoSize = true;
             this.dylbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dylbl.Location = new System.Drawing.Point(686, 74);
+            this.dylbl.Location = new System.Drawing.Point(699, 79);
             this.dylbl.Name = "dylbl";
             this.dylbl.Size = new System.Drawing.Size(30, 20);
             this.dylbl.TabIndex = 35;
@@ -357,7 +366,7 @@
             // 
             this.Yrlbl.AutoSize = true;
             this.Yrlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Yrlbl.Location = new System.Drawing.Point(727, 74);
+            this.Yrlbl.Location = new System.Drawing.Point(740, 79);
             this.Yrlbl.Name = "Yrlbl";
             this.Yrlbl.Size = new System.Drawing.Size(40, 20);
             this.Yrlbl.TabIndex = 36;
@@ -402,12 +411,82 @@
             this.pswlbl.TabIndex = 40;
             this.pswlbl.Text = "Enter Password:";
             // 
+            // dividerpb
+            // 
+            this.dividerpb.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.dividerpb.Location = new System.Drawing.Point(834, -18);
+            this.dividerpb.Name = "dividerpb";
+            this.dividerpb.Size = new System.Drawing.Size(15, 643);
+            this.dividerpb.TabIndex = 41;
+            this.dividerpb.TabStop = false;
+            this.dividerpb.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // Qrgenbtn
+            // 
+            this.Qrgenbtn.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.Qrgenbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Qrgenbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Qrgenbtn.Location = new System.Drawing.Point(1046, 428);
+            this.Qrgenbtn.Name = "Qrgenbtn";
+            this.Qrgenbtn.Size = new System.Drawing.Size(142, 39);
+            this.Qrgenbtn.TabIndex = 42;
+            this.Qrgenbtn.Text = "Generate QR";
+            this.Qrgenbtn.UseVisualStyleBackColor = false;
+            this.Qrgenbtn.Click += new System.EventHandler(this.Qrgenbtn_Click);
+            // 
+            // Camerabtn
+            // 
+            this.Camerabtn.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.Camerabtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Camerabtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Camerabtn.Location = new System.Drawing.Point(953, 356);
+            this.Camerabtn.Name = "Camerabtn";
+            this.Camerabtn.Size = new System.Drawing.Size(142, 39);
+            this.Camerabtn.TabIndex = 43;
+            this.Camerabtn.Text = "Camera";
+            this.Camerabtn.UseVisualStyleBackColor = false;
+            // 
+            // QRgenpb
+            // 
+            this.QRgenpb.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.QRgenpb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.QRgenpb.Location = new System.Drawing.Point(868, 428);
+            this.QRgenpb.Name = "QRgenpb";
+            this.QRgenpb.Size = new System.Drawing.Size(172, 150);
+            this.QRgenpb.TabIndex = 44;
+            this.QRgenpb.TabStop = false;
+            // 
+            // Webcampb
+            // 
+            this.Webcampb.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Webcampb.Location = new System.Drawing.Point(869, 53);
+            this.Webcampb.Name = "Webcampb";
+            this.Webcampb.Size = new System.Drawing.Size(305, 271);
+            this.Webcampb.TabIndex = 45;
+            this.Webcampb.TabStop = false;
+            // 
+            // QRlbl
+            // 
+            this.QRlbl.AutoSize = true;
+            this.QRlbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.QRlbl.Location = new System.Drawing.Point(868, 27);
+            this.QRlbl.Name = "QRlbl";
+            this.QRlbl.Size = new System.Drawing.Size(227, 20);
+            this.QRlbl.TabIndex = 46;
+            this.QRlbl.Text = "Have a QR Code? Scan here. ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(812, 572);
+            this.ClientSize = new System.Drawing.Size(1195, 590);
+            this.Controls.Add(this.QRlbl);
+            this.Controls.Add(this.Webcampb);
+            this.Controls.Add(this.QRgenpb);
+            this.Controls.Add(this.Camerabtn);
+            this.Controls.Add(this.Qrgenbtn);
+            this.Controls.Add(this.dividerpb);
             this.Controls.Add(this.pswlbl);
             this.Controls.Add(this.SortAccbtn);
             this.Controls.Add(this.SortAcctxtbx_psw);
@@ -450,6 +529,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.DesPBbot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dividerpb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QRgenpb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Webcampb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -494,5 +576,11 @@
         private TextBox SortAcctxtbx_psw;
         private Button SortAccbtn;
         private Label pswlbl;
+        private PictureBox dividerpb;
+        private Button Qrgenbtn;
+        private Button Camerabtn;
+        private PictureBox QRgenpb;
+        private PictureBox Webcampb;
+        private Label QRlbl;
     }
 }
