@@ -449,7 +449,7 @@
             // QRgenpb
             // 
             this.QRgenpb.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.QRgenpb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.QRgenpb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.QRgenpb.Location = new System.Drawing.Point(868, 428);
             this.QRgenpb.Name = "QRgenpb";
             this.QRgenpb.Size = new System.Drawing.Size(172, 150);

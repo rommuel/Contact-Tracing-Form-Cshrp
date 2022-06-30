@@ -235,6 +235,7 @@ namespace Contact_Tracing_Form
                 // QR Code Creator
                 QRCodeData data = qr.CreateQrCode(QRinfo, QRCodeGenerator.ECCLevel.Q);
                 QRCode code = new QRCode(data);
+                QRgenpb.SizeMode = PictureBoxSizeMode.StretchImage;
                 QRgenpb.Image = code.GetGraphic(5);
 
             }
