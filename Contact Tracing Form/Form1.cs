@@ -1,6 +1,10 @@
 namespace Contact_Tracing_Form
 {
     using QRCoder;
+    using AForge.Video;
+    using AForge.Video.DirectShow;
+    
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -8,6 +12,10 @@ namespace Contact_Tracing_Form
             InitializeComponent();
         }
 
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice videoCaptureDevice;
+        
+       
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -241,6 +249,43 @@ namespace Contact_Tracing_Form
             }
                 
             
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterinfo in filterInfoCollection)
+                cboDevice.Items.Add(filterinfo.Name);
+            cboDevice.SelectedIndex = 0;
+          
+        }
+
+        private void Startbtn_Click(object sender, EventArgs e)
+        {
+            videoCaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboDevice.SelectedIndex].MonikerString);
+            videoCaptureDevice.NewFrame += VideoCaptureDevice_NewFrame;
+            videoCaptureDevice.Start();
+        }
+
+        private void VideoCaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            Webcampb.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (videoCaptureDevice.IsRunning)
+                videoCaptureDevice.Stop();
+
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Webcampb.Image != null)
+            {
+               
+            }
         }
     }
 }

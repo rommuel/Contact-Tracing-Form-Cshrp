@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Namelbl = new System.Windows.Forms.Label();
             this.SNlbl = new System.Windows.Forms.Label();
             this.FNlbl = new System.Windows.Forms.Label();
@@ -67,10 +68,12 @@
             this.pswlbl = new System.Windows.Forms.Label();
             this.dividerpb = new System.Windows.Forms.PictureBox();
             this.Qrgenbtn = new System.Windows.Forms.Button();
-            this.Camerabtn = new System.Windows.Forms.Button();
+            this.Startbtn = new System.Windows.Forms.Button();
             this.QRgenpb = new System.Windows.Forms.PictureBox();
             this.Webcampb = new System.Windows.Forms.PictureBox();
             this.QRlbl = new System.Windows.Forms.Label();
+            this.cboDevice = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DesPBbot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBr)).BeginInit();
@@ -221,7 +224,7 @@
             this.Submitbtn.BackColor = System.Drawing.Color.MediumAquamarine;
             this.Submitbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Submitbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Submitbtn.Location = new System.Drawing.Point(619, 462);
+            this.Submitbtn.Location = new System.Drawing.Point(668, 452);
             this.Submitbtn.Name = "Submitbtn";
             this.Submitbtn.Size = new System.Drawing.Size(142, 35);
             this.Submitbtn.TabIndex = 17;
@@ -426,7 +429,7 @@
             this.Qrgenbtn.BackColor = System.Drawing.Color.MediumAquamarine;
             this.Qrgenbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Qrgenbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Qrgenbtn.Location = new System.Drawing.Point(1046, 428);
+            this.Qrgenbtn.Location = new System.Drawing.Point(1047, 437);
             this.Qrgenbtn.Name = "Qrgenbtn";
             this.Qrgenbtn.Size = new System.Drawing.Size(142, 39);
             this.Qrgenbtn.TabIndex = 42;
@@ -434,23 +437,24 @@
             this.Qrgenbtn.UseVisualStyleBackColor = false;
             this.Qrgenbtn.Click += new System.EventHandler(this.Qrgenbtn_Click);
             // 
-            // Camerabtn
+            // Startbtn
             // 
-            this.Camerabtn.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.Camerabtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Camerabtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Camerabtn.Location = new System.Drawing.Point(953, 356);
-            this.Camerabtn.Name = "Camerabtn";
-            this.Camerabtn.Size = new System.Drawing.Size(142, 39);
-            this.Camerabtn.TabIndex = 43;
-            this.Camerabtn.Text = "Camera";
-            this.Camerabtn.UseVisualStyleBackColor = false;
+            this.Startbtn.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.Startbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Startbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Startbtn.Location = new System.Drawing.Point(1032, 317);
+            this.Startbtn.Name = "Startbtn";
+            this.Startbtn.Size = new System.Drawing.Size(142, 39);
+            this.Startbtn.TabIndex = 43;
+            this.Startbtn.Text = "Start";
+            this.Startbtn.UseVisualStyleBackColor = false;
+            this.Startbtn.Click += new System.EventHandler(this.Startbtn_Click);
             // 
             // QRgenpb
             // 
             this.QRgenpb.BackColor = System.Drawing.SystemColors.HighlightText;
             this.QRgenpb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.QRgenpb.Location = new System.Drawing.Point(868, 428);
+            this.QRgenpb.Location = new System.Drawing.Point(869, 437);
             this.QRgenpb.Name = "QRgenpb";
             this.QRgenpb.Size = new System.Drawing.Size(172, 150);
             this.QRgenpb.TabIndex = 44;
@@ -459,7 +463,7 @@
             // Webcampb
             // 
             this.Webcampb.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Webcampb.Location = new System.Drawing.Point(869, 53);
+            this.Webcampb.Location = new System.Drawing.Point(869, 32);
             this.Webcampb.Name = "Webcampb";
             this.Webcampb.Size = new System.Drawing.Size(305, 271);
             this.Webcampb.TabIndex = 45;
@@ -469,11 +473,25 @@
             // 
             this.QRlbl.AutoSize = true;
             this.QRlbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.QRlbl.Location = new System.Drawing.Point(868, 27);
+            this.QRlbl.Location = new System.Drawing.Point(855, 9);
             this.QRlbl.Name = "QRlbl";
             this.QRlbl.Size = new System.Drawing.Size(227, 20);
             this.QRlbl.TabIndex = 46;
             this.QRlbl.Text = "Have a QR Code? Scan here. ";
+            // 
+            // cboDevice
+            // 
+            this.cboDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDevice.FormattingEnabled = true;
+            this.cboDevice.Location = new System.Drawing.Point(869, 323);
+            this.cboDevice.Name = "cboDevice";
+            this.cboDevice.Size = new System.Drawing.Size(151, 28);
+            this.cboDevice.TabIndex = 47;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -481,10 +499,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1195, 590);
+            this.Controls.Add(this.cboDevice);
             this.Controls.Add(this.QRlbl);
             this.Controls.Add(this.Webcampb);
             this.Controls.Add(this.QRgenpb);
-            this.Controls.Add(this.Camerabtn);
+            this.Controls.Add(this.Startbtn);
             this.Controls.Add(this.Qrgenbtn);
             this.Controls.Add(this.dividerpb);
             this.Controls.Add(this.pswlbl);
@@ -526,6 +545,8 @@
             this.Controls.Add(this.Namelbl);
             this.Name = "Form1";
             this.Text = "Contact Tracing Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DesPBbot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBr)).EndInit();
@@ -578,9 +599,11 @@
         private Label pswlbl;
         private PictureBox dividerpb;
         private Button Qrgenbtn;
-        private Button Camerabtn;
+        private Button Startbtn;
         private PictureBox QRgenpb;
         private PictureBox Webcampb;
         private Label QRlbl;
+        private ComboBox cboDevice;
+        private System.Windows.Forms.Timer timer1;
     }
 }
