@@ -23,3 +23,4 @@ C:\Users\PC\source\repos\Contact Tracing Form\Contact Tracing Form\bin\Debug\net
 C:\Users\PC\source\repos\Contact Tracing Form\Contact Tracing Form\bin\Debug\net6.0-windows\AForge.Video.dll
 C:\Users\PC\source\repos\Contact Tracing Form\Contact Tracing Form\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
 C:\Users\PC\source\repos\Contact Tracing Form\Contact Tracing Form\bin\Debug\net6.0-windows\zxing.dll
+C:\Users\PC\source\repos\Contact Tracing Form\Contact Tracing Form\bin\Debug\net6.0-windows\ZXing.Windows.Compatibility.dll

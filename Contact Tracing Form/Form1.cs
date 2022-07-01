@@ -3,8 +3,9 @@ namespace Contact_Tracing_Form
     using QRCoder;
     using AForge.Video;
     using AForge.Video.DirectShow;
+    using ZXing;
+    using ZXing.Windows.Compatibility;
     
-
     public partial class Form1 : Form
     {
         public Form1()
@@ -284,9 +285,76 @@ namespace Contact_Tracing_Form
         {
             if (Webcampb.Image != null)
             {
-                BarcodeReader barcodeReader = new BarcodeReader;
-                
+                // date and time-in (Manual Input Required)
+                string Month = Monthtxtbx.Text;
+                string Day = Daytxtbx.Text;
+                string Year = Yeartxtbx.Text;
 
+                string Time_in = Timetxtbx.Text;
+                string am_pm = ampmtxtbx.Text;
+
+                int counter = 0;
+
+
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)Webcampb.Image);
+                if (result != null)
+                {
+                    string confirm_msg = "The following will be inputted.";
+                    string qrdataconfirm_title = "Is this correct?";
+                    string qrdataconfirm = (result.ToString());
+                    MessageBox.Show(confirm_msg);
+
+                    var confirmation = MessageBox.Show(qrdataconfirm, qrdataconfirm_title, MessageBoxButtons.YesNo);
+                    if (confirmation != DialogResult.Yes)
+                    {
+                        if (Month.Length > 1)
+                        {
+                            counter++;
+                        }
+                        if (Day.Length > 1)
+                        {
+                            counter++;
+                        }
+                        if (Year.Length > 3)
+                        {
+                            counter++;
+                        }
+                        if (Time_in.Length > 0)
+                        {
+                            counter++;
+                        }
+                        if (am_pm.Length > 0)
+                        {
+                            counter++;
+                        }
+
+                        if (counter != 5)
+                        {
+                            MessageBox.Show("Please Manually input the date and time-in of your entry and try again.");
+                        }
+                        else
+                        {
+                            StreamWriter file = new StreamWriter(@"C:\Users\PC\source\repos\Contact Tracing Form\Data Input.txt", true);
+                            file.WriteLine(qrdataconfirm + " " + "Date: " + Month + "/" + Day + "/" + Year + " " + "Time: " + Time_in + " " + am_pm);
+                            file.Close();
+
+                            MessageBox.Show("Data has been saved! You may now proceed.");
+                        }
+
+
+                    }
+                    else if (confirmation != DialogResult.No)
+                    {
+
+                        MessageBox.Show("If QRcode is showing the wrong information, please proceed to manual filling for the Contact Tracing Form.");
+                    }
+
+
+                    timer1.Stop();
+
+                    
+                }
             }
         }
     }
