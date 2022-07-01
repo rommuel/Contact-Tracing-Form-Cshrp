@@ -284,7 +284,9 @@ namespace Contact_Tracing_Form
         {
             if (Webcampb.Image != null)
             {
-               
+                BarcodeReader barcodeReader = new BarcodeReader;
+                
+
             }
         }
     }
