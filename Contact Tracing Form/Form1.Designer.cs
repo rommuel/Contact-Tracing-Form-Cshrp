@@ -74,6 +74,7 @@
             this.QRlbl = new System.Windows.Forms.Label();
             this.cboDevice = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Datetimeinlbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBbot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DesPBr)).BeginInit();
@@ -86,7 +87,7 @@
             // 
             this.Namelbl.AutoSize = true;
             this.Namelbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Namelbl.Location = new System.Drawing.Point(17, 171);
+            this.Namelbl.Location = new System.Drawing.Point(8, 206);
             this.Namelbl.Name = "Namelbl";
             this.Namelbl.Size = new System.Drawing.Size(57, 20);
             this.Namelbl.TabIndex = 0;
@@ -95,7 +96,7 @@
             // SNlbl
             // 
             this.SNlbl.AutoSize = true;
-            this.SNlbl.Location = new System.Drawing.Point(21, 200);
+            this.SNlbl.Location = new System.Drawing.Point(12, 235);
             this.SNlbl.Name = "SNlbl";
             this.SNlbl.Size = new System.Drawing.Size(70, 20);
             this.SNlbl.TabIndex = 1;
@@ -105,7 +106,7 @@
             // FNlbl
             // 
             this.FNlbl.AutoSize = true;
-            this.FNlbl.Location = new System.Drawing.Point(200, 200);
+            this.FNlbl.Location = new System.Drawing.Point(191, 235);
             this.FNlbl.Name = "FNlbl";
             this.FNlbl.Size = new System.Drawing.Size(83, 20);
             this.FNlbl.TabIndex = 2;
@@ -114,7 +115,7 @@
             // MNlbl
             // 
             this.MNlbl.AutoSize = true;
-            this.MNlbl.Location = new System.Drawing.Point(493, 200);
+            this.MNlbl.Location = new System.Drawing.Point(484, 235);
             this.MNlbl.Name = "MNlbl";
             this.MNlbl.Size = new System.Drawing.Size(103, 20);
             this.MNlbl.TabIndex = 3;
@@ -122,21 +123,21 @@
             // 
             // SNtxtbx
             // 
-            this.SNtxtbx.Location = new System.Drawing.Point(21, 223);
+            this.SNtxtbx.Location = new System.Drawing.Point(12, 258);
             this.SNtxtbx.Name = "SNtxtbx";
             this.SNtxtbx.Size = new System.Drawing.Size(153, 27);
             this.SNtxtbx.TabIndex = 4;
             // 
             // FNtxtbx
             // 
-            this.FNtxtbx.Location = new System.Drawing.Point(200, 223);
+            this.FNtxtbx.Location = new System.Drawing.Point(191, 258);
             this.FNtxtbx.Name = "FNtxtbx";
             this.FNtxtbx.Size = new System.Drawing.Size(253, 27);
             this.FNtxtbx.TabIndex = 5;
             // 
             // MNtxtbx
             // 
-            this.MNtxtbx.Location = new System.Drawing.Point(493, 223);
+            this.MNtxtbx.Location = new System.Drawing.Point(484, 258);
             this.MNtxtbx.Name = "MNtxtbx";
             this.MNtxtbx.Size = new System.Drawing.Size(204, 27);
             this.MNtxtbx.TabIndex = 6;
@@ -144,7 +145,7 @@
             // 
             // Emailtxtbx
             // 
-            this.Emailtxtbx.Location = new System.Drawing.Point(21, 294);
+            this.Emailtxtbx.Location = new System.Drawing.Point(12, 329);
             this.Emailtxtbx.Name = "Emailtxtbx";
             this.Emailtxtbx.Size = new System.Drawing.Size(359, 27);
             this.Emailtxtbx.TabIndex = 7;
@@ -153,7 +154,7 @@
             // 
             this.Emaillbl.AutoSize = true;
             this.Emaillbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Emaillbl.Location = new System.Drawing.Point(17, 271);
+            this.Emaillbl.Location = new System.Drawing.Point(8, 306);
             this.Emaillbl.Name = "Emaillbl";
             this.Emaillbl.Size = new System.Drawing.Size(55, 20);
             this.Emaillbl.TabIndex = 8;
@@ -163,7 +164,7 @@
             // 
             this.ConNumlbl.AutoSize = true;
             this.ConNumlbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ConNumlbl.Location = new System.Drawing.Point(436, 271);
+            this.ConNumlbl.Location = new System.Drawing.Point(427, 306);
             this.ConNumlbl.Name = "ConNumlbl";
             this.ConNumlbl.Size = new System.Drawing.Size(136, 20);
             this.ConNumlbl.TabIndex = 9;
@@ -171,21 +172,21 @@
             // 
             // ConNumtxtbx
             // 
-            this.ConNumtxtbx.Location = new System.Drawing.Point(436, 294);
+            this.ConNumtxtbx.Location = new System.Drawing.Point(427, 329);
             this.ConNumtxtbx.Name = "ConNumtxtbx";
             this.ConNumtxtbx.Size = new System.Drawing.Size(261, 27);
             this.ConNumtxtbx.TabIndex = 10;
             // 
             // Citytxtbx
             // 
-            this.Citytxtbx.Location = new System.Drawing.Point(21, 388);
+            this.Citytxtbx.Location = new System.Drawing.Point(12, 423);
             this.Citytxtbx.Name = "Citytxtbx";
             this.Citytxtbx.Size = new System.Drawing.Size(208, 27);
             this.Citytxtbx.TabIndex = 11;
             // 
             // FAddresstxtbx
             // 
-            this.FAddresstxtbx.Location = new System.Drawing.Point(253, 388);
+            this.FAddresstxtbx.Location = new System.Drawing.Point(244, 423);
             this.FAddresstxtbx.Name = "FAddresstxtbx";
             this.FAddresstxtbx.Size = new System.Drawing.Size(544, 27);
             this.FAddresstxtbx.TabIndex = 12;
@@ -193,7 +194,7 @@
             // Citylbl
             // 
             this.Citylbl.AutoSize = true;
-            this.Citylbl.Location = new System.Drawing.Point(21, 365);
+            this.Citylbl.Location = new System.Drawing.Point(12, 400);
             this.Citylbl.Name = "Citylbl";
             this.Citylbl.Size = new System.Drawing.Size(124, 20);
             this.Citylbl.TabIndex = 13;
@@ -203,7 +204,7 @@
             // 
             this.Addresslbl.AutoSize = true;
             this.Addresslbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Addresslbl.Location = new System.Drawing.Point(21, 336);
+            this.Addresslbl.Location = new System.Drawing.Point(12, 371);
             this.Addresslbl.Name = "Addresslbl";
             this.Addresslbl.Size = new System.Drawing.Size(73, 20);
             this.Addresslbl.TabIndex = 14;
@@ -213,7 +214,7 @@
             // FAddlbl
             // 
             this.FAddlbl.AutoSize = true;
-            this.FAddlbl.Location = new System.Drawing.Point(253, 365);
+            this.FAddlbl.Location = new System.Drawing.Point(244, 400);
             this.FAddlbl.Name = "FAddlbl";
             this.FAddlbl.Size = new System.Drawing.Size(65, 20);
             this.FAddlbl.TabIndex = 15;
@@ -224,7 +225,7 @@
             this.Submitbtn.BackColor = System.Drawing.Color.MediumAquamarine;
             this.Submitbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Submitbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Submitbtn.Location = new System.Drawing.Point(668, 452);
+            this.Submitbtn.Location = new System.Drawing.Point(670, 485);
             this.Submitbtn.Name = "Submitbtn";
             this.Submitbtn.Size = new System.Drawing.Size(142, 35);
             this.Submitbtn.TabIndex = 17;
@@ -246,7 +247,7 @@
             // 
             this.Inst_lbl.AutoSize = true;
             this.Inst_lbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Inst_lbl.Location = new System.Drawing.Point(12, 135);
+            this.Inst_lbl.Location = new System.Drawing.Point(3, 170);
             this.Inst_lbl.Name = "Inst_lbl";
             this.Inst_lbl.Size = new System.Drawing.Size(262, 20);
             this.Inst_lbl.TabIndex = 19;
@@ -257,7 +258,7 @@
             this.DesPBbot.BackColor = System.Drawing.Color.MediumAquamarine;
             this.DesPBbot.Location = new System.Drawing.Point(-9, 53);
             this.DesPBbot.Name = "DesPBbot";
-            this.DesPBbot.Size = new System.Drawing.Size(826, 10);
+            this.DesPBbot.Size = new System.Drawing.Size(846, 12);
             this.DesPBbot.TabIndex = 22;
             this.DesPBbot.TabStop = false;
             // 
@@ -275,7 +276,7 @@
             this.DesPBr.BackColor = System.Drawing.Color.MediumAquamarine;
             this.DesPBr.Location = new System.Drawing.Point(559, 23);
             this.DesPBr.Name = "DesPBr";
-            this.DesPBr.Size = new System.Drawing.Size(258, 15);
+            this.DesPBr.Size = new System.Drawing.Size(278, 15);
             this.DesPBr.TabIndex = 24;
             this.DesPBr.TabStop = false;
             // 
@@ -283,7 +284,7 @@
             // 
             this.Timelbl.AutoSize = true;
             this.Timelbl.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Timelbl.Location = new System.Drawing.Point(571, 130);
+            this.Timelbl.Location = new System.Drawing.Point(561, 161);
             this.Timelbl.Name = "Timelbl";
             this.Timelbl.Size = new System.Drawing.Size(78, 23);
             this.Timelbl.TabIndex = 26;
@@ -291,14 +292,14 @@
             // 
             // Timetxtbx
             // 
-            this.Timetxtbx.Location = new System.Drawing.Point(655, 129);
+            this.Timetxtbx.Location = new System.Drawing.Point(645, 160);
             this.Timetxtbx.Name = "Timetxtbx";
             this.Timetxtbx.Size = new System.Drawing.Size(70, 27);
             this.Timetxtbx.TabIndex = 27;
             // 
             // ampmtxtbx
             // 
-            this.ampmtxtbx.Location = new System.Drawing.Point(731, 130);
+            this.ampmtxtbx.Location = new System.Drawing.Point(721, 161);
             this.ampmtxtbx.Name = "ampmtxtbx";
             this.ampmtxtbx.Size = new System.Drawing.Size(58, 27);
             this.ampmtxtbx.TabIndex = 28;
@@ -308,7 +309,7 @@
             this.ampmlbl.AutoSize = true;
             this.ampmlbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ampmlbl.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.ampmlbl.Location = new System.Drawing.Point(731, 160);
+            this.ampmlbl.Location = new System.Drawing.Point(721, 191);
             this.ampmlbl.Name = "ampmlbl";
             this.ampmlbl.Size = new System.Drawing.Size(59, 20);
             this.ampmlbl.TabIndex = 29;
@@ -318,7 +319,7 @@
             // 
             this.Datelbl.AutoSize = true;
             this.Datelbl.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Datelbl.Location = new System.Drawing.Point(571, 97);
+            this.Datelbl.Location = new System.Drawing.Point(561, 128);
             this.Datelbl.Name = "Datelbl";
             this.Datelbl.Size = new System.Drawing.Size(55, 23);
             this.Datelbl.TabIndex = 30;
@@ -326,21 +327,21 @@
             // 
             // Monthtxtbx
             // 
-            this.Monthtxtbx.Location = new System.Drawing.Point(655, 97);
+            this.Monthtxtbx.Location = new System.Drawing.Point(645, 128);
             this.Monthtxtbx.Name = "Monthtxtbx";
             this.Monthtxtbx.Size = new System.Drawing.Size(39, 27);
             this.Monthtxtbx.TabIndex = 31;
             // 
             // Daytxtbx
             // 
-            this.Daytxtbx.Location = new System.Drawing.Point(700, 97);
+            this.Daytxtbx.Location = new System.Drawing.Point(690, 128);
             this.Daytxtbx.Name = "Daytxtbx";
             this.Daytxtbx.Size = new System.Drawing.Size(34, 27);
             this.Daytxtbx.TabIndex = 32;
             // 
             // Yeartxtbx
             // 
-            this.Yeartxtbx.Location = new System.Drawing.Point(740, 97);
+            this.Yeartxtbx.Location = new System.Drawing.Point(730, 128);
             this.Yeartxtbx.Name = "Yeartxtbx";
             this.Yeartxtbx.Size = new System.Drawing.Size(70, 27);
             this.Yeartxtbx.TabIndex = 33;
@@ -349,7 +350,7 @@
             // 
             this.Mnthlbl.AutoSize = true;
             this.Mnthlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Mnthlbl.Location = new System.Drawing.Point(655, 79);
+            this.Mnthlbl.Location = new System.Drawing.Point(645, 110);
             this.Mnthlbl.Name = "Mnthlbl";
             this.Mnthlbl.Size = new System.Drawing.Size(38, 20);
             this.Mnthlbl.TabIndex = 34;
@@ -359,7 +360,7 @@
             // 
             this.dylbl.AutoSize = true;
             this.dylbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dylbl.Location = new System.Drawing.Point(699, 79);
+            this.dylbl.Location = new System.Drawing.Point(689, 110);
             this.dylbl.Name = "dylbl";
             this.dylbl.Size = new System.Drawing.Size(30, 20);
             this.dylbl.TabIndex = 35;
@@ -369,7 +370,7 @@
             // 
             this.Yrlbl.AutoSize = true;
             this.Yrlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Yrlbl.Location = new System.Drawing.Point(740, 79);
+            this.Yrlbl.Location = new System.Drawing.Point(730, 110);
             this.Yrlbl.Name = "Yrlbl";
             this.Yrlbl.Size = new System.Drawing.Size(40, 20);
             this.Yrlbl.TabIndex = 36;
@@ -378,7 +379,7 @@
             // SortAcclbl
             // 
             this.SortAcclbl.AutoSize = true;
-            this.SortAcclbl.Location = new System.Drawing.Point(21, 490);
+            this.SortAcclbl.Location = new System.Drawing.Point(3, 517);
             this.SortAcclbl.Name = "SortAcclbl";
             this.SortAcclbl.Size = new System.Drawing.Size(60, 20);
             this.SortAcclbl.TabIndex = 37;
@@ -387,7 +388,7 @@
             // SortAcctxtbx_psw
             // 
             this.SortAcctxtbx_psw.ForeColor = System.Drawing.Color.Black;
-            this.SortAcctxtbx_psw.Location = new System.Drawing.Point(21, 513);
+            this.SortAcctxtbx_psw.Location = new System.Drawing.Point(3, 542);
             this.SortAcctxtbx_psw.Name = "SortAcctxtbx_psw";
             this.SortAcctxtbx_psw.Size = new System.Drawing.Size(182, 27);
             this.SortAcctxtbx_psw.TabIndex = 38;
@@ -397,7 +398,7 @@
             this.SortAccbtn.BackColor = System.Drawing.Color.CadetBlue;
             this.SortAccbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SortAccbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SortAccbtn.Location = new System.Drawing.Point(220, 513);
+            this.SortAccbtn.Location = new System.Drawing.Point(202, 540);
             this.SortAccbtn.Name = "SortAccbtn";
             this.SortAccbtn.Size = new System.Drawing.Size(94, 29);
             this.SortAccbtn.TabIndex = 39;
@@ -408,7 +409,7 @@
             // pswlbl
             // 
             this.pswlbl.AutoSize = true;
-            this.pswlbl.Location = new System.Drawing.Point(52, 543);
+            this.pswlbl.Location = new System.Drawing.Point(34, 570);
             this.pswlbl.Name = "pswlbl";
             this.pswlbl.Size = new System.Drawing.Size(111, 20);
             this.pswlbl.TabIndex = 40;
@@ -429,7 +430,7 @@
             this.Qrgenbtn.BackColor = System.Drawing.Color.MediumAquamarine;
             this.Qrgenbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Qrgenbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Qrgenbtn.Location = new System.Drawing.Point(1047, 437);
+            this.Qrgenbtn.Location = new System.Drawing.Point(1047, 428);
             this.Qrgenbtn.Name = "Qrgenbtn";
             this.Qrgenbtn.Size = new System.Drawing.Size(142, 39);
             this.Qrgenbtn.TabIndex = 42;
@@ -454,7 +455,7 @@
             // 
             this.QRgenpb.BackColor = System.Drawing.SystemColors.HighlightText;
             this.QRgenpb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.QRgenpb.Location = new System.Drawing.Point(869, 437);
+            this.QRgenpb.Location = new System.Drawing.Point(869, 428);
             this.QRgenpb.Name = "QRgenpb";
             this.QRgenpb.Size = new System.Drawing.Size(172, 150);
             this.QRgenpb.TabIndex = 44;
@@ -490,8 +491,18 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 1000;
+            this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Datetimeinlbl
+            // 
+            this.Datetimeinlbl.AutoSize = true;
+            this.Datetimeinlbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Datetimeinlbl.Location = new System.Drawing.Point(559, 83);
+            this.Datetimeinlbl.Name = "Datetimeinlbl";
+            this.Datetimeinlbl.Size = new System.Drawing.Size(268, 20);
+            this.Datetimeinlbl.TabIndex = 48;
+            this.Datetimeinlbl.Text = "Manual Input for time-in required:";
             // 
             // Form1
             // 
@@ -499,6 +510,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1195, 590);
+            this.Controls.Add(this.Datetimeinlbl);
             this.Controls.Add(this.cboDevice);
             this.Controls.Add(this.QRlbl);
             this.Controls.Add(this.Webcampb);
@@ -605,5 +617,6 @@
         private Label QRlbl;
         private ComboBox cboDevice;
         private System.Windows.Forms.Timer timer1;
+        private Label Datetimeinlbl;
     }
 }

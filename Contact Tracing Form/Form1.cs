@@ -14,7 +14,7 @@ namespace Contact_Tracing_Form
         }
 
         FilterInfoCollection filterInfoCollection;
-        VideoCaptureDevice videoCaptureDevice;
+        VideoCaptureDevice captureDevice;
         
        
         private void label2_Click(object sender, EventArgs e)
@@ -263,9 +263,10 @@ namespace Contact_Tracing_Form
 
         private void Startbtn_Click(object sender, EventArgs e)
         {
-            videoCaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboDevice.SelectedIndex].MonikerString);
-            videoCaptureDevice.NewFrame += VideoCaptureDevice_NewFrame;
-            videoCaptureDevice.Start();
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[cboDevice.SelectedIndex].MonikerString);
+            captureDevice.NewFrame += VideoCaptureDevice_NewFrame;
+            captureDevice.Start();
+            timer1.Start();
         }
 
         private void VideoCaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
@@ -275,10 +276,8 @@ namespace Contact_Tracing_Form
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (videoCaptureDevice.IsRunning)
-                videoCaptureDevice.Stop();
-
-
+            if (captureDevice.IsRunning)
+                captureDevice.Stop();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -300,12 +299,12 @@ namespace Contact_Tracing_Form
                 Result result = barcodeReader.Decode((Bitmap)Webcampb.Image);
                 if (result != null)
                 {
-                    string confirm_msg = "The following will be inputted.";
                     string qrdataconfirm_title = "Is this correct?";
                     string qrdataconfirm = (result.ToString());
-                    MessageBox.Show(confirm_msg);
+                    MessageBox.Show(qrdataconfirm, qrdataconfirm_title, MessageBoxButtons.YesNo);
 
                     var confirmation = MessageBox.Show(qrdataconfirm, qrdataconfirm_title, MessageBoxButtons.YesNo);
+
                     if (confirmation != DialogResult.Yes)
                     {
                         if (Month.Length > 1)
@@ -331,7 +330,7 @@ namespace Contact_Tracing_Form
 
                         if (counter != 5)
                         {
-                            MessageBox.Show("Please Manually input the date and time-in of your entry and try again.");
+                            MessageBox.Show("Please Manually input the date and time-in of your entry first and try again.");
                         }
                         else
                         {
@@ -341,19 +340,12 @@ namespace Contact_Tracing_Form
 
                             MessageBox.Show("Data has been saved! You may now proceed.");
                         }
-
-
                     }
-                    else if (confirmation != DialogResult.No)
+                    else
                     {
-
-                        MessageBox.Show("If QRcode is showing the wrong information, please proceed to manual filling for the Contact Tracing Form.");
+                        MessageBox.Show("If QR code is displaying the wrong information. Please proceed to manual filling of the Contact Tracing Form.");
                     }
-
-
                     timer1.Stop();
-
-                    
                 }
             }
         }
